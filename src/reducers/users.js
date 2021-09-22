@@ -10,7 +10,6 @@ export default function users(state = INITIAL_STATE, action) {
     case Types.GET_USERS_REQUEST:
       return { ...state };
     case Types.GET_USERS_SUCCESS:
-      // return { ...state, ...action.payload };
       return {
         ...state,
         items: action.payload.items

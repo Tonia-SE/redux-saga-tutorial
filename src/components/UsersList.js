@@ -1,16 +1,8 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { Button, ListGroupItem } from 'reactstrap';
 import { ListGroup } from 'reactstrap';
-import { deleteUserRequest } from '../actions/users';
 
 const UsersList = ({ users, onDeleteUser }) => {
-
-  // const dispatch = useDispatch();
-
-  // const handleDeleteUser = (id) => {
-  //   dispatch(deleteUserRequest(id))
-  // }
 
   return (
     <ListGroup>
@@ -25,7 +17,6 @@ const UsersList = ({ users, onDeleteUser }) => {
                 <Button 
                   outline color='danger' 
                   onClick={() => onDeleteUser(user.id)}
-                  // onClick={() => handleDeleteUser(user.id)}
                 >
                   Delete
                 </Button>
